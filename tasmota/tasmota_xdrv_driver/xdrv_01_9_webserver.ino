@@ -1687,6 +1687,10 @@ void HandleRoot(void) {
     } else {
       WSContentButton(BUTTON_MANAGEMENT);
     }
+#ifdef USE_SCRIPT
+    // Add Edit Script button with green styling directly on main page
+    WSContentSend_P(PSTR("<p><form action='s10' method='get'><button class='bgrn'>" D_CONFIGURE_SCRIPT "</button></form></p>"));
+#endif  // USE_SCRIPT
 #endif  // Not FIRMWARE_MINIMAL
     WSContentButton(BUTTON_RESTART);
   }
