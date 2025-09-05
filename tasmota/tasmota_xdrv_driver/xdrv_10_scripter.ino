@@ -9909,6 +9909,11 @@ void HandleScriptConfiguration(void) {
     WSContentStart_P(PSTR(D_CONFIGURE_SCRIPT));
     WSContentSendStyle();
     WSContentSend_P(HTTP_FORM_SCRIPT);
+    
+    // Add hidden field to preserve 'from' parameter
+    if (Webserver->hasArg("from")) {
+      WSContentSend_P(PSTR("<input type='hidden' name='from' value='%s'/>"), Webserver->arg("from").c_str());
+    }
 
 
 #ifdef xSCRIPT_STRIP_COMMENTS
@@ -9937,7 +9942,14 @@ void HandleScriptConfiguration(void) {
 
     WSContentSend_P(HTTP_SCRIPT_FORM_END);
     WSContentSend_P(HTTP_SCRIPT_SMARTMETER_JS);
-    WSContentSpaceButton(BUTTON_MANAGEMENT);
+    
+    // Check if we came from main page and show appropriate back button
+    if (Webserver->hasArg("from") && Webserver->arg("from").equals("main")) {
+      WSContentSpaceButton(BUTTON_MAIN);
+    } else {
+      WSContentSpaceButton(BUTTON_MANAGEMENT);
+    }
+    
     WSContentStop();
 }
 
