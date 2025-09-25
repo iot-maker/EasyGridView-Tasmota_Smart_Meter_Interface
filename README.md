@@ -10,6 +10,35 @@
 
 ## Änderungen zum Original Tasmota
 
+Diese Firmware ist spezifisch auf IR Leseköpfe für Stromzähler ausgelegt. Die 'Edit Script'-Konsole wurde erweitert und verfügt über eine Suchfunktion für Stromzählerskripte.
+
+<details>
+<summary>Schritt 1: Konsole öffnen</summary>
+
+Drücken sie den grünen 'Edit Script'-Button, um die Konsole zu öffnen.
+
+<img width="364" height="471" alt="MainMenu" src="https://github.com/user-attachments/assets/c1f7cc1b-f18d-44ec-a55e-067ef02d2c4b" />
+
+</details>
+
+<details>
+<summary>Schritt 2: Stromzählerskript suchen</summary>
+
+Geben sie in dem Feld 'Search meter model' den Namen ihres Stromzählers ein und drücken sie auf 'Load Script'.
+
+<img width="600" height="620" alt="ScriptingConsole_Search" src="https://github.com/user-attachments/assets/7d8ceb85-4973-4073-b48e-539108c1d79d" />
+
+</details>
+
+<details>
+<summary>Schritt 3: Skript aktivieren und speichern</summary>
+
+Setzen sie den Haken bei 'Script enable' und drücken sie auf 'Save'. Wenn sie nun zum Main Menu zurückkehren, dürften ihnen die ausgelesenen Werte angezeigt werden.
+
+<img width="600" height="620" alt="ScriptingConsole_Enabled" src="https://github.com/user-attachments/assets/db0667a2-3182-47aa-92ca-bb9f1df764e9" />
+
+</details>
+
 ## Installation
 
 ## Important User Compilation Information
