@@ -2,77 +2,68 @@
 
 > Angepasste Version von [Tasmota](https://github.com/arendst/Tasmota)
 
-<hr></hr>
-
-**In light of current events we like to support the people behind _PlatformIO Project_, especially Ivan Kravets, and wish them the strength to help stop the war. See [platformio-is-ukrainian-project-please-help-us-stop-the-war](https://community.platformio.org/t/platformio-is-ukrainian-project-please-help-us-stop-the-war/26330) for what you can do.**
-
-<hr></hr>
-
 ## Änderungen zum Original Tasmota
 
 Diese Firmware ist spezifisch auf IR Leseköpfe für Stromzähler ausgelegt. Die 'Edit Script'-Konsole wurde erweitert und verfügt über eine Suchfunktion für Stromzählerskripte.
 
-<details>
-<summary>Schritt 1: Konsole öffnen</summary>
+
+### <summary>Schritt 1: Konsole öffnen</summary>
 
 Drücken sie den grünen 'Edit Script'-Button, um die Konsole zu öffnen.
 
 <img width="364" height="471" alt="MainMenu" src="https://github.com/user-attachments/assets/c1f7cc1b-f18d-44ec-a55e-067ef02d2c4b" />
 
-</details>
 
-<details>
-<summary>Schritt 2: Stromzählerskript suchen</summary>
+### <summary>Schritt 2: Stromzählerskript suchen</summary>
 
 Geben sie in dem Feld 'Search meter model' den Namen ihres Stromzählers ein und drücken sie auf 'Load Script'.
 
 <img width="600" height="620" alt="ScriptingConsole_Search" src="https://github.com/user-attachments/assets/7d8ceb85-4973-4073-b48e-539108c1d79d" />
 
-</details>
 
-<details>
-<summary>Schritt 3: Skript aktivieren und speichern</summary>
+### <summary>Schritt 3: Skript aktivieren und speichern</summary>
 
 Setzen sie den Haken bei 'Script enable' und drücken sie auf 'Save'. Wenn sie nun zum Main Menu zurückkehren, dürften ihnen die ausgelesenen Werte angezeigt werden.
 
 <img width="600" height="620" alt="ScriptingConsole_Enabled" src="https://github.com/user-attachments/assets/db0667a2-3182-47aa-92ca-bb9f1df764e9" />
 
-</details>
 
 ## Installation
 
-## Important User Compilation Information
-If you want to compile Tasmota yourself keep in mind the following:
+## Wichtige Informationen zur Kompilierung
+Wenn Sie Tasmota selbst kompilieren möchten, beachten Sie bitte Folgendes:
 
-- For ESP8285 based devices only Flash Mode **DOUT** is supported. Do not use Flash Mode DIO / QIO / QOUT as it might seem to brick your device.
-- For ESP8285 based devices Tasmota uses a 1M linker script WITHOUT spiffs **1M (no SPIFFS)** for optimal code space.
-- To make compile time changes to Tasmota use the `user_config_override.h` file. It assures keeping your custom settings when you download and compile a new version. You have to make a copy from the provided `user_config_override_sample.h` file and add your setting overrides.
+- Für Geräte auf ESP8285-Basis wird nur der Flash-Modus **DOUT** unterstützt. Verwenden Sie nicht den Flash-Modus DIO / QIO / QOUT, da dies Ihr Gerät unbrauchbar machen könnte.
+- Für ESP8285-basierte Geräte verwendet Tasmota ein 1M-Linker-Skript OHNE SPIFFS **1M (kein SPIFFS)** für einen optimalen Code-Speicherplatz.
+- Um Änderungen an Tasmota während der Kompilierung vorzunehmen, verwenden Sie die Datei `user_config_override.h`. Dadurch werden Ihre benutzerdefinierten Einstellungen beim Herunterladen und Kompilieren einer neuen Version beibehalten. Sie müssen eine Kopie der bereitgestellten Datei `user_config_override_sample.h` erstellen und Ihre Einstellungen hinzufügen.
 
-## Configuration Information
+## Konfigurationsinformationen
 
-Please refer to the installation and configuration articles in the official [Tasmota documentation](https://tasmota.github.io/docs).
+Bitte lesen Sie die Artikel zur Installation und Konfiguration in der offiziellen [Tasmota-Dokumentation](https://tasmota.github.io/docs).
 
 ## Disclaimer
 
-:warning: **DANGER OF ELECTROCUTION** :warning:
+:warning: **STROMSCHLAGGEFAHR** :warning:
 
-If your device connects to mains electricity (AC power) there is danger of electrocution if not installed properly. If you don't know how to install it, please call an electrician (***Beware:*** certain countries prohibit installation without a licensed electrician present). Remember: _**SAFETY FIRST**_. It is not worth the risk to yourself, your family and your home if you don't know exactly what you are doing. Never tinker or try to flash a device using the serial programming interface while it is connected to MAINS ELECTRICITY (AC power).
+Wenn Ihr Gerät an das Stromnetz (Wechselstrom) angeschlossen wird, besteht bei unsachgemäßer Installation die Gefahr eines Stromschlags. Wenn Sie nicht wissen, wie es installiert wird, wenden Sie sich bitte an einen Elektriker (***Achtung:*** In einigen Ländern ist die Installation ohne einen zugelassenen Elektriker verboten). Denken Sie daran: _**SICHERHEIT GEHT VOR**_. Es lohnt sich nicht, ein Risiko für sich selbst, Ihre Familie und Ihr Zuhause einzugehen, wenn Sie nicht genau wissen, was Sie tun. Basteln Sie niemals an einem Gerät herum und versuchen Sie niemals, es über die serielle Programmierschnittstelle zu flashen, während es an das STROMNETZ (Wechselstrom) angeschlossen ist.
 
-We don't take any responsibility nor liability for using this software nor for the installation or any tips, advice, videos, etc. given by any member of this site or any related site.
+Wir übernehmen keine Verantwortung oder Haftung für die Verwendung dieser Software oder für die Installation oder Tipps, Ratschläge, Videos usw., die von Mitgliedern dieser Website oder einer verwandten Website gegeben werden.
 
-## Support Information
+### Offizielle Tasmota Dokumentation
 
-For a database of supported devices see [Tasmota Device Templates Repository](https://templates.blakadder.com)
+* [Dokumentationsseite](https://tasmota.github.io/docs): Informationen zum Flashen, Konfigurieren, Verwenden und Erweitern von Tasmota
+* [FAQ und Fehlerbehebung](https://tasmota.github.io/docs/FAQ/): Informationen zu häufigen Problemen und Lösungen.
+* [Informationen zu Befehlen](https://tasmota.github.io/docs/Commands): Informationen zu allen von Tasmota unterstützten Befehlen.
 
-### Official Tasmota Documentation
+<hr></hr>
 
-* [Documentation Site](https://tasmota.github.io/docs): For information on how to flash Tasmota, configure, use and expand it
-* [FAQ and Troubleshooting](https://tasmota.github.io/docs/FAQ/): For information on common problems and solutions.
-* [Commands Information](https://tasmota.github.io/docs/Commands): For information on all the commands supported by Tasmota.
+Angesichts der aktuellen Ereignisse möchten wir die Menschen hinter dem PlatformIO-Projekt, insbesondere Ivan Kravets, unterstützen und wünschen ihnen die Kraft, zur Beendigung des Krieges beizutragen. Unter [platformio-is-ukrainian-project-please-help-us-stop-the-war](https://community.platformio.org/t/platformio-is-ukrainian-project-please-help-us-stop-the-war/26330) erfahren Sie, was Sie tun können.**
+
+<hr></hr>
 
 ## Credits
 
-This fork is based on the excellent work of the [Tasmota project](https://github.com/arendst/Tasmota) and its many contributors.
+Diese Fork basiert auf der hervorragenden Arbeit des [Tasmota-Projekts](https://github.com/arendst/Tasmota) und seiner zahlreichen Mitwirkenden.
 
 ## License
 
