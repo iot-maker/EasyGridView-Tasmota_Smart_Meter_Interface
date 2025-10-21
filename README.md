@@ -36,9 +36,9 @@ Setzen sie den Haken bei 'Script enable' und drücken sie auf 'Save'. Wenn sie n
   3. .bin Datei auswählen und auf "Start upgrade" klicken
 
 ### 2. Methode – Flashen
-_**ACHTUNG: Beim Flashen werden alle Daten gelöscht!**_
+_**ACHTUNG: Beim Flashen werden alle Daten auf dem Gerät gelöscht!**_
   1. [Web Flasher](https://selbstbau-pv.de/pages/tasmota-web-flasher)
-  2. Falls das nicht klappen sollte, kann man [Hier](https://github.com/iot-maker/EasyGridView-Tasmota_Smart_Meter_Interface/releases/tag/v15.0.1) die factory.bin für das passende Modell runterladen und über die [Tasmota Web Flasher](https://tasmota.github.io/install/) auf das Gerät flashen.
+  2. Falls das nicht klappen sollte, kann man [Hier](https://github.com/iot-maker/EasyGridView-Tasmota_Smart_Meter_Interface/releases/tag/v15.0.1) die factory.bin für das passende ESP Modell runterladen und über die [Tasmota Web Flasher](https://tasmota.github.io/install/) auf das Gerät flashen.
 
 
 ## Konfigurationsinformationen
