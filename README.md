@@ -30,12 +30,16 @@ Setzen sie den Haken bei 'Script enable' und drücken sie auf 'Save'. Wenn sie n
 
 ## Installation
 
-## Wichtige Informationen zur Kompilierung
-Wenn Sie Tasmota selbst kompilieren möchten, beachten Sie bitte Folgendes:
+### 1. Methode – Over-the-air
+  1. korrekte .bin [Hier](https://github.com/iot-maker/EasyGridView-Tasmota_Smart_Meter_Interface/releases/tag/v15.0.1) je nach ESP Modell runterladen
+  2. Im Tasmota Webinterface auf "Firmware Upgrade" navigieren
+  3. .bin Datei auswählen und auf "Start upgrade" klicken
 
-- Für Geräte auf ESP8285-Basis wird nur der Flash-Modus **DOUT** unterstützt. Verwenden Sie nicht den Flash-Modus DIO / QIO / QOUT, da dies Ihr Gerät unbrauchbar machen könnte.
-- Für ESP8285-basierte Geräte verwendet Tasmota ein 1M-Linker-Skript OHNE SPIFFS **1M (kein SPIFFS)** für einen optimalen Code-Speicherplatz.
-- Um Änderungen an Tasmota während der Kompilierung vorzunehmen, verwenden Sie die Datei `user_config_override.h`. Dadurch werden Ihre benutzerdefinierten Einstellungen beim Herunterladen und Kompilieren einer neuen Version beibehalten. Sie müssen eine Kopie der bereitgestellten Datei `user_config_override_sample.h` erstellen und Ihre Einstellungen hinzufügen.
+### 2. Methode – Flashen
+_**ACHTUNG: Beim Flashen werden alle Daten gelöscht!**_
+  1. [Web Flasher](https://selbstbau-pv.de/pages/tasmota-web-flasher)
+  2. Falls das nicht klappen sollte, kann man [Hier](https://github.com/iot-maker/EasyGridView-Tasmota_Smart_Meter_Interface/releases/tag/v15.0.1) die factory.bin für das passende Modell runterladen und über die [Tasmota Web Flasher](https://tasmota.github.io/install/) auf das Gerät flashen.
+
 
 ## Konfigurationsinformationen
 
