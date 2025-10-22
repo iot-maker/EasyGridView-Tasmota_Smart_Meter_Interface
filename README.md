@@ -30,15 +30,15 @@ Setzen sie den Haken bei 'Script enable' und drücken sie auf 'Save'. Wenn sie n
 
 ## Installation
 
-### 1. Methode – Over-the-air
-  1. korrekte .bin [Hier](https://github.com/iot-maker/EasyGridView-Tasmota_Smart_Meter_Interface/releases/tag/v15.0.1) je nach ESP Modell runterladen
+### 1. Methode – Over-the-air (OTA)
+  1. Die korrekte '.bin'-Datei [hier](https://github.com/iot-maker/EasyGridView-Tasmota_Smart_Meter_Interface/releases/tag/v15.0.1) je nach ESP Modell runterladen
   2. Im Tasmota Webinterface auf "Firmware Upgrade" navigieren
-  3. .bin Datei auswählen und auf "Start upgrade" klicken
+  3. '.bin'-Datei auswählen und auf "Start upgrade" klicken
 
 ### 2. Methode – Flashen
 _**ACHTUNG: Beim Flashen werden alle Daten auf dem Gerät gelöscht!**_
-  1. [Web Flasher](https://selbstbau-pv.de/pages/tasmota-web-flasher)
-  2. Falls das nicht klappen sollte, kann man [Hier](https://github.com/iot-maker/EasyGridView-Tasmota_Smart_Meter_Interface/releases/tag/v15.0.1) die factory.bin für das passende ESP Modell runterladen und über den [Tasmota Web Flasher](https://tasmota.github.io/install/) auf das Gerät flashen.
+  1. Nutzen sie diesen [Web Flasher](https://selbstbau-pv.de/pages/tasmota-web-flasher). Hier muss keine bestimmte Version ausgewählt werden. Abhängig von dem angeschlossenen Gerät wird automatisch die passende Version installiert.
+  2. Falls das nicht klappen sollte, kann [hier](https://github.com/iot-maker/EasyGridView-Tasmota_Smart_Meter_Interface/releases/tag/v15.0.1) die factory.bin für das passende ESP Modell heruntergeladen und über den [Tasmota Web Flasher](https://tasmota.github.io/install/) auf das Gerät geflashed werden.
 
 
 ## Konfigurationsinformationen
@@ -61,7 +61,7 @@ Wir übernehmen keine Verantwortung oder Haftung für die Verwendung dieser Soft
 
 <hr></hr>
 
-Angesichts der aktuellen Ereignisse möchten wir die Menschen hinter dem PlatformIO-Projekt, insbesondere Ivan Kravets, unterstützen und wünschen ihnen die Kraft, zur Beendigung des Krieges beizutragen. Unter [platformio-is-ukrainian-project-please-help-us-stop-the-war](https://community.platformio.org/t/platformio-is-ukrainian-project-please-help-us-stop-the-war/26330) erfahren Sie, was Sie tun können.**
+**Angesichts der aktuellen Ereignisse möchten wir die Menschen hinter dem PlatformIO-Projekt, insbesondere Ivan Kravets, unterstützen und wünschen ihnen die Kraft, zur Beendigung des Krieges beizutragen. Unter [platformio-is-ukrainian-project-please-help-us-stop-the-war](https://community.platformio.org/t/platformio-is-ukrainian-project-please-help-us-stop-the-war/26330) erfahren Sie, was Sie tun können.**
 
 <hr></hr>
 
